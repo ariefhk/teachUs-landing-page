@@ -12,6 +12,100 @@
     <title>TeachUs Landing Page</title>
   </head>
   <body>
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container md:px-10 px-5 lg:px-20">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a
+              href="#"
+              class="text-teal-700 font-bold text-primary text-lg block py-6"
+            >
+              TeachUs.
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] right-4 w-full top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#popular_course"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >Courses</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#popular_category"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >Categories</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="py-2 mx-8 group-hover:text-primary flex"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="px-3 py-2 mx-8 group-hover:text-teal-700 flex rounded border border-teal-700"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="px-3 py-2 mx-8 group-hover:text-white flex bg-teal-400 rounded"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero Section Start -->
     <section id="hero">
       <div class="container mt-36 px-4 md:px-10 lg:px-20">
@@ -582,13 +676,115 @@
     <!-- Instructor Section Start -->
     <section id="instructor">
       <div class="container mt-20 px-4 md:px-10 lg:px-20 lg:mt-32">
-        <div class="flex flex-wrap">
-          <div class="relative">
-            <img src="/dist/images/instructor.png" alt="" srcset="" />
+        <div class="flex">
+          <div class="relative w-1/2">
+            <img
+              src="/dist/images/instructor.png"
+              alt=""
+              srcset=""
+              width="150px"
+            />
+            <div
+              class="z-50 absolute bottom-2 left-12 bg-white flex px-3 py-1 border rounded-md items-center justify-center gap-2 hover:bg-gray-100"
+            >
+              <img
+                src="/dist/images/ic_instructor.png"
+                alt=""
+                srcset=""
+                flex-col
+                width="30px"
+              />
+              <div class="flex flex-col">
+                <p class="text-[#001A49] font-bold text-[10px]">500K</p>
+                <p class="text-[#001A49] font-medium text-[6px]">
+                  Active Instructors
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-1/2">
+            <p class="text-[#001A49] font-bold text-[15px]">
+              Become an Instructor
+            </p>
+            <p class="text-[#001A49] text-[10px] my-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              iaculis tempor porttitor. Phasellus velit ante, lobortis a cursus
+              eu, posuere ut diam. Morbi gravida lectus et consectetur
+              dignissim.
+            </p>
+            <div
+              class="flex w-[60%] py-2 border rounded-md items-center bg-teal-600 justify-center hover:bg-gray-100"
+            >
+              <a href="#" class="text-white font-medium text-[8px]"
+                >Start teaching today</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Instructor Section End -->
+
+    <!-- Get Free Class Start -->
+    <section id="get_free_class">
+      <div class="container mt-20 px-4 md:px-10 lg:px-20 lg:mt-32">
+        <div class="flex flex-col items-center">
+          <p class="text-[#001A49] font-bold text-[20px]">Get a free class!</p>
+          <p class="text-[#001A49] text-[12px] my-[16px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <form action="" method="post" class="mt-8">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email here..."
+              name="email"
+              class="border px-2 py-1 text-[14px]"
+            />
+            <button
+              type="submit"
+              class="bg-teal-700 text-white px-2 py-1 text-[14px]"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Get Free Class End -->
+    <section id="about">
+      <div class="container mt-20 mb-[90px] px-4 md:px-10 lg:px-20 lg:mt-32">
+        <div class="flex flex-col gap-5 lg:flex-row lg:justify-between">
+          <div class="flex flex-col lg:w-3/12">
+            <p class="text-teal-700 font-bold text-[30px]">TeachUs.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              iaculis tempor porttitor.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-[#2B3039] text-[22px]">Product</p>
+            <a href="#">Company</a>
+            <a href="#">Leadership</a>
+            <a href="#">Jobs</a>
+            <a href="#">University</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-[#2B3039] text-[22px]">Quick Links</p>
+            <a href="#">About Us</a>
+            <a href="#">Contacts</a>
+            <a href="#">Founder</a>
+            <a href="#">Lorem</a>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-[#2B3039] text-[22px]">Legal</p>
+            <a href="#">Terms and condition</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/dist/script.js"></script>
   </body>
 </html>
