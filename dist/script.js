@@ -11,6 +11,7 @@ window.onscroll = () => {
 
 const hamburger = document.querySelector("#hamburger");
 const navbarShow = document.querySelector("#nav-menu");
+const navbarHidden = document.querySelector("#navhidden");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("hamburger-active");
